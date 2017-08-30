@@ -1,9 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #4CAF50;
+    background-color: #f1c40f;
 }
-
 
 
 
@@ -11,7 +10,7 @@ body {
 
 .black {
     position: absolute;
-    top: -6%;
+    top: -5%;
     left: 5%;
 }
 
@@ -37,12 +36,9 @@ body {
     cursor: pointer;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
-
-
-
 
 
 /*MENU*/
@@ -53,13 +49,12 @@ body {
     position: fixed;
     top: 5%;
     right: 8%;
+    z-index: 9999;
 }
 
 #MenuIcon:hover {
     cursor: pointer;
 }
-
-
 
 
 
@@ -111,12 +106,14 @@ body {
     height: 100vh;
     width: 300px;
     background-color: #181818;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 0% 100%, 0% 100% );
+    -webkit-clip-path: polygon(0 0, 100% 0%, 0% 100%, 0% 100%);
     position: fixed;
     top: 0;
     left: -300px;
     transition: all .5s ease-in-out;
+    z-index: 9999;
 }
+
 
 /*Unordered List*/
 
@@ -156,7 +153,7 @@ ul li:hover .line {
     width: 90px;
 }
 
-#logo{
+#logo {
     position: absolute;
     top: 100;
     left: 50%;
@@ -168,6 +165,135 @@ ul li:hover .line {
     bottom: 10%;
     left: 50%;
     transform: translate(-50%);
+}
+
+.welcome {
+    position: relative;
+    top: 20%;
+    left: 30%;
+    width: 80%;
+    transform: translate(-40%, -10%);
+    font-size: 600%;
+    font-family: Calibri;
+    font-weight: 100;
+    transition: all 0.5s;
+    margin: auto;
+}
+
+.text-welcome {
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.pro-pic-div {
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+.welcome h1::after {
+    box-shadow: 0 0 4px #000000;;
+}
+
+
+/*#side Icons*/
+
+.box {
+    width: 20px;
+    height: 180px;
+    position: fixed;
+    margin: 0 auto 0;
+    top: 50%;
+    right: 0;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    z-index: 999;
+}
+
+
+.pulse-button,
+.pulse-button1,
+.pulse-button2,
+.pulse-button3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    text-decoration: none;
+    display: block;
+    width: 6px;
+    height: 6px;
+    font-size: 1.3em;
+    border-radius: 50%;
+    background-color: #181818;
+    box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
+}
+
+.pulse-button1 {
+    top: 60%;
+}
+
+.pulse-button2 {
+    top: 70%;
+}
+
+.pulse-button3 {
+    top: 80%;
+}
+
+.anime {
+    animation: pulse 1.5s ease-in-out infinite;
+    background-color: white;
+}
+
+.pulse-button:hover,
+.pulse-button1:hover,
+.pulse-button2:hover,
+.pulse-button3:hover {
+    animation: none;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.8);
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.07);
+    }
+
+    100% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+}
+
+/*Profile Pic*/
+
+.pro-pic {
+    height:800px;
+    width: 800px;
+}
+
+
+
+/*SECTION_HOME*/
+.home {
+    position: relative;
+    height: 100vh;
     
 }
 
+
+/*SECTION_ABOUT*/
+
+.about {
+    position: relative;
+    height: 100vh;
+    background-color: dodgerblue;
+}
