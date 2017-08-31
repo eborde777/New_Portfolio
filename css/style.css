@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f1c40f;
+/*    background-color: #f1c40f;*/
 }
 
 
@@ -50,6 +50,7 @@ body {
     top: 5%;
     right: 8%;
     z-index: 9999;
+/*    background-color: #edff57;*/
 }
 
 #MenuIcon:hover {
@@ -64,6 +65,7 @@ body {
     height: 4px;
     width: 50px;
     background-color: #181818;
+    border:1px solid #ffeb3b; /*#edff57*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,6 +80,7 @@ body {
     background-color: #181818;
     position: absolute;
     margin-top: 10px;
+    border:1px solid #ffeb3b; /*#edff57*/
     transition: all .3s;
 }
 
@@ -93,6 +96,7 @@ body {
     position: absolute;
     margin-top: -10px;
     transition: all .3s;
+    border:1px solid #ffeb3b; /*#edff57*/
 }
 
 #MenuIcon:hover #MenuLine::after {
@@ -190,6 +194,7 @@ ul li:hover .line {
     position: absolute;
     top: 0;
     right:0;
+    
 }
 
 .welcome h1::after {
@@ -245,7 +250,7 @@ ul li:hover .line {
 
 .anime {
     animation: pulse 1.5s ease-in-out infinite;
-    background-color: white;
+    background-color: #5f6207;
 }
 
 .pulse-button:hover,
@@ -259,25 +264,30 @@ ul li:hover .line {
 @keyframes pulse {
     0% {
         transform: scale(1.8);
-        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.2);
     }
 
     70% {
         transform: scale(1);
-        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.07);
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.07);
     }
 
     100% {
         transform: scale(1.2);
-        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.05);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.05);
     }
 }
 
 /*Profile Pic*/
 
 .pro-pic {
-    height:800px;
-    width: 800px;
+    margin-top: -12%;
+    height:700px;
+    width: 700px;
+}
+
+.pro-pic img {
+    box-shadow: 10px 10px 50px #000000;
 }
 
 
@@ -286,14 +296,8 @@ ul li:hover .line {
 .home {
     position: relative;
     height: 100vh;
+    background: #ffeb3b; /*#edff57*/
+/*    overflow-y: hidden;*/
     
 }
 
-
-/*SECTION_ABOUT*/
-
-.about {
-    position: relative;
-    height: 100vh;
-    background-color: dodgerblue;
-}
