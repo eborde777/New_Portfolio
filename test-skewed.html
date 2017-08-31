@@ -4,7 +4,112 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="css/project.css">
+    <style>
+    
+        body {
+      margin: 0;
+      padding: 0;
+  }
+
+  .projects {
+      min-height: 100vh;
+      border: 2px solid #000;
+      position: relative;
+      overflow: hidden;
+      /*    background-color: #edff57;*/
+  }
+
+  .project-skew1 {
+      width: 100%;
+      height: 300px;
+      background: #262626;
+      position: relative;
+      /*    margin-top: -50px;*/
+  }
+
+  .project-title {
+      padding: 50px 100px;
+      width: 20%;
+      margin-left: 35%;
+  }
+
+  .project-title h1 {
+      color: #ffeb3b;
+      font-size: 4em;
+      padding: 20px;
+  }
+
+  .project-skew2 {
+      width: 100%;
+      height: auto;
+      background: #ffeb3b;
+      position: relative;
+  }
+
+  .project-skew2::before {
+      content: '';
+      width: 50%;
+      height: 100px;
+      position: absolute;
+      top: -48px;
+      left: 0;
+      background: #ffeb3b;
+      transform: skewY(6deg);
+  }
+
+  .project-skew2::after {
+      content: '';
+      width: 50%;
+      height: 100px;
+      position: absolute;
+      top: -48px;
+      right: 0;
+      background: #ffeb3b;
+      transform: skewY(-6deg);
+  }
+        
+        .project-container {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr);
+            height:auto;
+            width:auto;
+            padding: 1%;
+            grid-gap: 30px;
+        }
+
+        .project-images1, .project-images2, .project-images3{
+            margin-top: 110px;
+            box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.58);
+        }
+        
+        .project-images2{
+            box-shadow: -10px 10px 15px 5px rgba(0, 0, 0, 0.58)
+        }
+        
+        .project-description1, .project-description2, .project-description3{
+           
+            color: #000000;
+            font-family: Arial;
+            padding: 10%;
+            margin-top: 110px;
+        }
+        
+        
+        .project-container img {
+            width: 100%;
+            height:100%;
+        }
+        
+        .project-container h1 {
+            font-size: 300%;
+        }
+        
+        .project-container p {
+            font-size: 140%;
+            line-height: 2;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -14,7 +119,35 @@
                 <h1>PROJECTS</h1>
             </div>
         </section>
-        <section class="project-skew2"></section>
+        <section class="project-skew2">
+        
+            <div class="project-container">
+                <div class="project-images1">
+                    <img src="img/1.jpg">
+                </div>
+                 <div class="project-description1">
+                     <h1>DataAnalyzer</h1>
+                    <p>Necessary ye contented newspaper zealously breakfast he prevailed. Melancholy middletons yet understood decisively boy law she. Answer him easily are its barton little. Oh no though mother be things simple itself. Dashwood horrible he strictly on as. Home fine in so am good body this hope</p>
+                </div>
+                <div class="project-description2">
+                    <h1>DataAnalyzer</h1>
+                 <p>Necessary ye contented newspaper zealously breakfast he prevailed. Melancholy middletons yet understood decisively boy law she. Answer him easily are its barton little. Oh no though mother be things simple itself. Dashwood horrible he strictly on as. Home fine in so am good body this hope</p>
+                </div>
+                <div class="project-images2">
+                    <img src="img/2.jpg">
+                </div>
+                
+                <div class="project-images3">
+                    <img src="img/3.jpg">
+                </div>
+               
+                <div class="project-description3">
+                    <h1>DataAnalyzer</h1>
+                 <p>Necessary ye contented newspaper zealously breakfast he prevailed. Melancholy middletons yet understood decisively boy law she. Answer him easily are its barton little. Oh no though mother be things simple itself. Dashwood horrible he strictly on as. Home fine in so am good body this hope</p>
+                </div>
+            </div>
+            
+        </section>
     </section>
 </body>
 </html>

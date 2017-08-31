@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Eliezer|PortFolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/project.css">
@@ -12,7 +13,7 @@
 
 <body>
 
-    <section class="home">
+    <section class="home" id="home">
         <div id="MenuIcon">
             <div id="MenuLine"></div>
         </div>
@@ -25,19 +26,19 @@
                 <img id="white-logo" class="white-logo hidden" src="img/white-logo.png">
             </div>
             <ul>
-                <li>HOME
+                <li><a href="#home">HOME</a>
                     <div class="line"></div>
                 </li>
-                <li>ABOUT
+                <li><a href="#about">ABOUT</a>
                     <div class="line"></div>
                 </li>
-                <li>WORK
+                <li><a href="#home">WORK</a>
                     <div class="line"></div>
                 </li>
-                <li>PROJECTS
+                <li><a href="#projects">PROJECTS</a>
                     <div class="line"></div>
                 </li>
-                <li>CONTACT
+                <li><a href="#home">CONTACT</a>
                     <div class="line"></div>
                 </li>
             </ul>
@@ -46,10 +47,10 @@
             </div>
         </div>
         <div class="box" id="box">
-            <a href="#" class="pulse-button anime"></a>
-            <a href="#about" class="pulse-button1"></a>
-            <a href="#" class="pulse-button2"></a>
-            <a href="#" class="pulse-button3"></a>
+            <a href="#home" class="pulse-button anime" id="pulse-button" ></a>
+            <a href="#about" class="pulse-button1" id="pulse-button1 "></a>
+            <a href="#projects" class="pulse-button2" id="pulse-button2 "></a>
+            <a href="#" class="pulse-button3" id="pulse-button3 "></a>
         </div>
         <div class="welcome">
             <div class="text-welcome">
@@ -57,7 +58,7 @@
             </div>
 
             <div class="pro-pic-div">
-                <img class="pro-pic" src="img/pro_pic.png">
+                <img class="pro-pic" src="img/new-something.png">
             </div>
 
         </div>
@@ -70,6 +71,9 @@
             </div>
         </section>
         <section class="skew-box2" id="skew-box2">
+            <div class="myImage">
+                <img src="img/pro_pic.png">
+            </div>
             <div class="about-skew-div2">
                 <h1>What I did all these years?</h1>
                 <p>Bringing so sociable felicity supplied mr. September suspicion far him two acuteness perfectly. Covered as an examine so regular of. Ye astonished friendship remarkably no. Window admire matter praise you bed whence. Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off.
@@ -77,14 +81,42 @@
             </div>
         </section>
     </section>
-    
+
     <section class="projects" id="projects">
         <section class="project-skew1">
             <div class="project-title">
                 <h1>PROJECTS</h1>
             </div>
         </section>
-        <section class="project-skew2"></section>
+        <section class="project-skew2">
+
+            <div class="project-container">
+                <div class="project-images1">
+                    <img src="data-analyzer/Result-Graph/numeric-result.PNG">
+                </div>
+                <div class="project-description1">
+                    <h1><a href="dataAnalyzer.html">DataAnalyzer</a></h1>
+                    <p>Necessary ye contented newspaper zealously breakfast he prevailed. Melancholy middletons yet understood decisively boy law she. Answer him easily are its barton little. Oh no though mother be things simple itself. Dashwood horrible he strictly on as. Home fine in so am good body this hope</p>
+                </div>
+                <div class="project-description2" style="text-align: right;">
+                    <h1><a href="qryBots.html">QryBots</a></h1>
+                    <p >Necessary ye contented newspaper zealously breakfast he prevailed. Melancholy middletons yet understood decisively boy law she. Answer him easily are its barton little. Oh no though mother be things simple itself. Dashwood horrible he strictly on as. Home fine in so am good body this hope</p>
+                </div>
+                <div class="project-images2">
+                    <img src="Qrybots/xml-gui.PNG">
+                </div>
+
+                <div class="project-images3">
+                    <img src="img/3.jpg">
+                </div>
+
+                <div class="project-description3">
+                    <h1>DataAnalyzer</h1>
+                    <p>Necessary ye contented newspaper zealously breakfast he prevailed. Melancholy middletons yet understood decisively boy law she. Answer him easily are its barton little. Oh no though mother be things simple itself. Dashwood horrible he strictly on as. Home fine in so am good body this hope</p>
+                </div>
+            </div>
+
+        </section>
     </section>
 
 
